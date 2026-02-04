@@ -1,24 +1,12 @@
 Tables:
 
-* [X] game_genres
-* [X] games_platform
-* [X] game_publisher
-* [X] game_sales
-* [X] game_teams
-* [X] game_ratings
+![ER](ER_Diagram.png)
 
+* **Games ↔ Sales is a 1-to-1 optional relationship (0..1).**
 
-
-
-
-games_rating 1 to many games_genre
-
-games_rating 1 to many games_teams
-
-game_sales 1 to many games_platform
-
-games_rating 1 to many games_genre
-
-games_rating 1 to many games_genre
-
-games_rating 1 to 1 game_sales
+  * A **Game** may have **zero or one** Sales record
+  * A **Sales** record may have **zero or one** Game
+* **Games → game_teams** : **one-to-many**
+* **Games → games_genres** : **one-to-many**
+* **Games → game_platform** : **one-to-many**
+* **Games → game_publisher** : **one-to-many**
