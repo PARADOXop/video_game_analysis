@@ -19,7 +19,7 @@ where publisher is null;
 
 
 
----------EVALUATION------------------------
+---------EVALUATION/SANITY CHECK------------------------
 -- Games table
 SELECT title, year, COUNT(*) 
 FROM games
@@ -59,17 +59,9 @@ FROM game_teams gt
 LEFT JOIN games g
 ON gt.title = g.title AND gt.year = g.year
 WHERE g.title IS NULL;
-
-
-
-
-
-
-
-select *
-from game_platform
-
-
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
 
 
 
