@@ -2,11 +2,9 @@ Tables:
 
 ![ER](ER_Diagram.png)
 
-* **Games ↔ Sales is a 1-to-1 optional relationship (0..1).**
-
-  * A **Game** may have **zero or one** Sales record
-  * A **Sales** record may have **zero or one** Game
-* **Games → game_teams** : **one-to-many**
-* **Games → games_genres** : **one-to-many**
-* **Games → game_platform** : **one-to-many**
-* **Games → game_publisher** : **one-to-many**
+* **Dataset Directory:** Contains all the data files we need.
+* **ETL.sql:** Establishes relationships between tables and evaluations.
+* **preprocessing.ipynb:** Handles all preprocessing and loading into SQL Server.
+* **powerbi_dashboard:** Contains the dashboard.
+* **project_report:** Project report.
+* **requirements.txt:** Lists all the libraries needed for preprocessing.
