@@ -16,7 +16,9 @@ select publisher
 from game_publisher
 where publisher is null;
 
-
+SELECT *
+FROM games
+where rating is null;
 
 
 ---------EVALUATION/SANITY CHECK------------------------
